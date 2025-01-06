@@ -1,4 +1,5 @@
 import Home from "./components/Home";
+
 import Input_detials from './components/Input_details.jsx'
 import Survey from './components/Survey.jsx'
 import { Provider } from 'react-redux'
@@ -26,4 +27,7 @@ const App = () => {
   );
 };
 
+
+
 export default App;
+
