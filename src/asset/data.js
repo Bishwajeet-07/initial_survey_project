@@ -35,21 +35,22 @@ export const data = [
 
     {
         index: 6,
-        Question: "What is your approach for the race?",
+        Question:  "How many kms will you run in TMM 2025?",
         option:["21KMS","42KMS"]
 
     },
 
     {
         index: 7,
-        Question: "How many kms will you run in TMM 2025?",
+        Question:"What is your approach for the race?" ,
         option:["Just finish and have fun","Work hard but don't bury myself","Race at the absolute limit"],
     },
 
+    //16
     {
         index: 8,
         Question: "What is your target time for the race?",
-        option:["<1.45","1.45-2.15",">2.15"],
+        option:["21K","42K"],
     },
 
     {
@@ -67,7 +68,7 @@ export const data = [
     {
         index: 11,
         Question: "Training: how do you gauge your current training for TMM 2025",
-        option:["⭐  (Panic + YouTube)","2⭐⭐ (Guilty conscience)","⭐⭐⭐ (Weekend Warrior)","⭐⭐⭐⭐ (STRAVE tracked)","⭐⭐⭐⭐⭐ (No human is limited)"],
+        option:["⭐  (Panic + YouTube)","⭐⭐ (Guilty conscience)","⭐⭐⭐ (Weekend Warrior)","⭐⭐⭐⭐ (STRAVE tracked)","⭐⭐⭐⭐⭐ (No human is limited)"],
     },
 
     {
@@ -82,6 +83,7 @@ export const data = [
         option:["Yes","No or Need Help", "Somewhat"],
     },
 
+    //22
     {
         index: 14,
         Question:  "What will you carry during the race?",
@@ -118,5 +120,20 @@ export const data = [
         index: 19,
         Question:  "Have you considered your post-race hydration and nutrition strategy?",
         option:[ "Can't move a finger",  "Hog at nearest restaurant","Vague plan", "Yes, Nutritionist level"],
+    },
+    {
+        index: 20,
+        Question:   "I am running in Mumbai for....",
+        option:[ "First time",  "2-5 times","5-10 times", "10+ times"],
+    },
+    {
+        index: 21,
+        Question:    "What's your race day shoe?",
+        option:[ "Other"],
+    },
+    {
+        index: 22,
+        Question: "Which running apps do you use?",
+        option:[ "Other"],
     },
 ]

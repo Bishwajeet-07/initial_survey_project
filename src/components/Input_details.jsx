@@ -31,15 +31,16 @@ const Input_details = () => {
     const [height_feet, setHeight_feet] = useState("");
     const [gender, setGender] = useState("");
     const [dob, setDob] = useState("");
-    const [height, setHeight] = useState(height_feet + "." + height_inch);
+    // const [height, setHeight] = useState("");
     // const [flag, setFlag] = useState(false);
 
 
     const userDetailsData = (e) => {
         e.preventDefault();
-        console.log(height_feet + "." + height_inch)
         const userData = {
-            name, email, city, weight, height, gender, dob
+            name, email, city, weight, height: {
+                height_feet, height_inch,
+            }, gender, dob
         };
         dispatch(setUser(userData));
 

@@ -16,6 +16,7 @@ const Result = () => {
                     <div className=" mt-4 bg-slate-100 p-2" key={index}>
                         <p>{"Q.- " + item.question}</p>
                         <p>{"A.- " + item.answer}</p>
+                        {(item.inputbox !== "") && <p>{"I.- " + item.inputbox}</p>}
                     </div>
                 ))}
             </li>
