@@ -5,14 +5,14 @@ import Survey from './components/Survey.jsx'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 import Result from './components/result.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import {  Routes, Route, HashRouter } from 'react-router-dom'
 import ProtectedRoute from "./utils/PortectedRoute.jsx";
 
 const App = () => {
   return (
     <div>
       <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/personal_information" element={<Input_detials />} />
@@ -21,7 +21,7 @@ const App = () => {
               <Route path="/result" element={<Result />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </Provider>
     </div>
   );
