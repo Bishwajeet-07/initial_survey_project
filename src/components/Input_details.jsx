@@ -10,10 +10,7 @@ const Input_details = () => {
 
     const dispatch = useDispatch();
     const navigate = useNavigate()
-
-
     const [emailError, setEmailError] = useState("");
-
     const validateEmail = (e) => {
         const email = e.target.value;
         if (validator.isEmail(email)) {
@@ -33,8 +30,7 @@ const Input_details = () => {
     const [dob, setDob] = useState("");
     // const [height, setHeight] = useState("");
     // const [flag, setFlag] = useState(false);
-
-
+    
     const userDetailsData = (e) => {
         e.preventDefault();
         const userData = {
@@ -43,7 +39,6 @@ const Input_details = () => {
             }, gender, dob
         };
         dispatch(setUser(userData));
-
         // localStorage.setItem("userData", JSON.stringify(userData));
         navigate("/survey");
     }
@@ -51,11 +46,11 @@ const Input_details = () => {
 
     return (
         <div>
-            <h1 className=" mb-10 text-center text-3xl font-bold mt-10">Personal Information</h1>
+            <h1 className=" mb-10 text-center text-3xl font-bold mt-10">Fill Your Details </h1>
 
             <div className="mb-10" >
-                <div className="mx-auto max-w-screen-md mt-6">
-                    <form className=" p-4" onSubmit={(e) => {
+                <div className="mx-auto max-w-screen-md mt-2">
+                    <form className="px-4" onSubmit={(e) => {
                         userDetailsData(e)
                     }} >
                         <h2 className=" text-lg mt-4 font-semibold">What is your name?</h2>
