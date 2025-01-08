@@ -7,6 +7,8 @@ import store from './store/store.js'
 import Result from './components/result.jsx'
 import {  Routes, Route, HashRouter } from 'react-router-dom'
 import ProtectedRoute from "./utils/PortectedRoute.jsx";
+import RacePlanner from "./components/RacePlnner.jsx";
+import MarathonSuccessPlan from "./components/MarathonSuccessPlan.jsx";
 
 const App = () => {
   return (
@@ -19,7 +21,11 @@ const App = () => {
             <Route element={<ProtectedRoute />} >
               <Route path="/survey" element={<Survey />} />
               <Route path="/result" element={<Result />} />
+
             </Route>
+            <Route path="/race_planner" element={<RacePlanner />} />
+            <Route path="/marathon_success_plan" element={<MarathonSuccessPlan />} />
+
           </Routes>
         </HashRouter>
       </Provider>
